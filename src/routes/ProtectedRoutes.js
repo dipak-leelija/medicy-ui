@@ -1,6 +1,7 @@
 import React from "react";
 
 // Dashboard
+import Dashboard from "../Dashboard";
 import EventManagement from "../dashboard/EventManagement";
 import SalesMonitoring from "../dashboard/SalesMonitoring";
 import WebsiteAnalytics from "../dashboard/WebsiteAnalytics";
@@ -82,6 +83,7 @@ import IconRemix from "../docs/IconRemix";
 import IconFeather from "../docs/IconFeather";
 
 const protectedRoutes = [
+  { path: "", element: <Dashboard /> },
   { path: "dashboard/finance", element: <FinanceMonitoring /> },
   { path: "dashboard/events", element: <EventManagement /> },
   { path: "dashboard/sales", element: <SalesMonitoring /> },
